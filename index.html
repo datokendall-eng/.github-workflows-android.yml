@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>JARVIS — Personal AI Agent</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+  <header>
+    <div class="brand"><div class="arc"></div><div><b>JARVIS</b><span>PERSONAL AI AGENT</span></div></div>
+    <div id="status" class="status">STANDBY</div>
+  </header>
+
+  <main>
+    <section class="orb-panel">
+      <div id="orb" class="orb"><div class="core"></div></div>
+      <div class="greeting">GOOD EVENING, DANIEL</div>
+      <div id="substatus">Ready for your command.</div>
+      <button id="mic" class="mic" title="Start voice input">🎙</button>
+      <div class="hint">Tap the microphone or type a command</div>
+    </section>
+
+    <section class="chat" id="chat">
+      <div class="msg jarvis"><b>JARVIS</b><p>Systems online. How can I assist?</p></div>
+    </section>
+
+    <section class="command">
+      <input id="input" autocomplete="off" placeholder="Command Jarvis…">
+      <button id="send">SEND</button>
+    </section>
+
+    <section class="tasks">
+      <div class="section-title">AVAILABLE TASKS</div>
+      <div class="chips">
+        <button data-cmd="What time is it?">Time</button>
+        <button data-cmd="Set a 1 minute timer">Timer</button>
+        <button data-cmd="Remember that buy motorcycle tires">Note</button>
+        <button data-cmd="Calculate 125 * 18">Calculate</button>
+        <button data-cmd="Search the web for used motorcycles under $3000">Web Search</button>
+      </div>
+    </section>
+  </main>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
